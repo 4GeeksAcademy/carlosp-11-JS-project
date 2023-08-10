@@ -34,5 +34,7 @@ let makeExcuse = () => {
     when[obtRandNum(when.length)]
   );
 
+  /*añado un comentario para hacer el pull request*/
+
   return randomExcuse;
 };
