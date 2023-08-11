@@ -9,8 +9,8 @@ window.onload = () => {
 };
 
 let makeExcuse = () => {
-  function obtRandNum(num) {
-    let randomNumber = Math.floor(Math.random() * num);
+  function generateRandomIndex(index) {
+    let randomNumber = Math.floor(Math.random() * index);
     return randomNumber;
   }
 
@@ -25,16 +25,16 @@ let makeExcuse = () => {
     "while I was praying"
   ];
 
-  let randomExcuse = who[obtRandNum(who.length)].concat(
+  let randomExcuse = who[generateRandomIndex(who.length)].concat(
     " ",
-    action[obtRandNum(action.length)],
+    action[generateRandomIndex(action.length)],
     " ",
-    what[obtRandNum(what.length)],
+    what[generateRandomIndex(what.length)],
     " ",
-    when[obtRandNum(when.length)]
+    when[generateRandomIndex(when.length)]
   );
 
-  /*añado un comentario para hacer el pull request*/
+  /*TODO: añado un comentario para hacer el pull request*/
 
   return randomExcuse;
 };
